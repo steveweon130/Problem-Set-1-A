@@ -8,11 +8,11 @@ class ProblemSet_1A {
         //QUARDATIC FORMULA
         
         //Variables
-        double a = 1;
-        double b = 5;
-        double c = 6;
-        double solution1 = (-b-(Math.sqrt(Math.pow(b,2)-4*a*c)))/2*a;
-        double solution2 = (-b+(Math.sqrt(Math.pow(b,2)-4*a*c)))/2*a;
+        double a = 1; //coeficient of x^2
+        double b = 5; //coeficient of x
+        double c = 6; //constant variable
+        double solution1 = (-b-(Math.sqrt(Math.pow(b,2)-4*a*c)))/2*a; //solution 1
+        double solution2 = (-b+(Math.sqrt(Math.pow(b,2)-4*a*c)))/2*a; //soultion 2
         
         //Print
         System.out.println("QUADRATIC FORMULA");
@@ -23,11 +23,11 @@ class ProblemSet_1A {
         //SLOPE FORMULA
         
         //Variables
-        double x1 = 0;
-        double y1 = 0;
-        double x2 = 2;
-        double y2 = 3;
-        double slope = (y2-y1)/(x2-x1);
+        double x1 = 0; // x-value of first point
+        double y1 = 0; // y-value of first point
+        double x2 = 2; // x-value of second point 
+        double y2 = 3; // y-value of second point
+        double slope = (y2-y1)/(x2-x1); //slope
         
         //Print
         System.out.println("SLOPE FORMULA");
@@ -37,8 +37,9 @@ class ProblemSet_1A {
         //MIDPOINT FORMULA
         
         //Variables
-        double midpointx = (x1+x2)/2;
-        double midpointy = (y1+y2)/2;
+        //x and y values of the two points are previously declared at SLOPE FORMULA Variables
+        double midpointx = (x1+x2)/2; // X-value of the mid point between 2 points
+        double midpointy = (y1+y2)/2; // Y-value of the mid point between 2 points
         
         //Print
         System.out.println("MIDPOINT FORMULA");
@@ -49,11 +50,11 @@ class ProblemSet_1A {
         //SUM OF AN ARITHMETIC SERIES
         
         //Variables
-        int nAri = 5;
-        double a1Ari = 1;
-        double d = 1.0;
-        double an = a + (double)(nAri-1)*d;
-        double sumAr = (double)nAri*(a1Ari+an)/2;
+        int nAri = 5; // number of terms being added
+        double a1Ari = 1; // first term in the sequence
+        double d = 1.0; // common difference between terms
+        double an = a + (double)(nAri-1)*d; // value of the nth term in the series
+        double sumAr = (double)nAri*(a1Ari+an)/2; // sum of the arithmetic series
         
         //Print
         System.out.println("SUM OF AN ARITHMETIC SERIES");
@@ -65,10 +66,10 @@ class ProblemSet_1A {
         //SUM OF A FINITE GEOMETRIC SERIES
         
         //Variable
-        int nGeo = 3;
-        double a1Geo = 1.0;
-        double r = 2.0;
-        double sumGeo = (a1Geo*(1-(Math.pow(r,nGeo)))/(1-r));
+        int nGeo = 3; // number of terms being multiplied
+        double a1Geo = 3.0; // the first term of the geometric sequence
+        double r = 2.0; // constant ratio where r isn't 1
+        double sumGeo = (a1Geo*(1-(Math.pow(r,nGeo)))/(1-r)); // sum of the finite geometric series
         
         //Print
         System.out.println("SUM OF A FINITE GEOMETRIC SERIES");
