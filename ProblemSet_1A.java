@@ -66,7 +66,7 @@ class ProblemSet_1A {
         
         //Variable
         int nGeo = 3;
-        double a1Geo = 3.0;
+        double a1Geo = 1.0;
         double r = 2.0;
         double sumGeo = (a1Geo*(1-(Math.pow(r,nGeo)))/(1-r));
         
